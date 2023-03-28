@@ -1,10 +1,15 @@
+let x =  prompt  ("input");
 
-let x = 'true';
-if (typeof(x) === 'string'
- || typeof(x) === 'boolean'
- || typeof(x) === 'number'
-){
-  console.log(typeof(x));
-} else {
-  console.log('Тип x не определен');
+switch (x) {
+  case "string":
+    alert( 'number' );
+    break;
+  case "number":
+    alert( 'string!' );
+    break;
+  case "boolean":
+    alert( 'boolean' );
+    break;
+  default:
+    alert( "Тип x-не определен" );
 }

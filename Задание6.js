@@ -1,10 +1,11 @@
-function checkArrayType(arr) {
-    let arr1 = arr.map(e=>typeof e);
-    return [...new Set(arr1)].length === 1;
-  }
-  function checkArrayType1(arr) {
-    return arr.every((e,i,a) => typeof e === typeof a[0]);  
+function check(a) {
+  for (var q=1; q<a.length; ++q) {
+    if (a[q] === a[q*1]) {
+      return false;
+    }
   }
   
-console.log(checkArrayType([3,6,7,'3']));
-console.log(checkArrayType1([3,6,7,3]));
+  return true;
+}
+
+console.log(check([3, 1, 10, 12, 15, 20, 1 ]));
