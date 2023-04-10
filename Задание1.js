@@ -1,15 +1,10 @@
-let a = prompt ("input");
-a = a++;
-alert (typeof a);
-  
-if (a%2 === 0) {
-  alert ("четное");
-  
-}
-else if (a%1 === 0) {
-  alert ("нечетное");
- 
-}
-else {
-  alert("Упс, кажется вы ошиблись")
+let input = prompt ("Введите значение");
+input = +input;
+
+if (Number.isNaN(input) || input === null) {
+   console.log("Упс, кажется, вы ошиблись")
+} else if (input % 2 === 0) {
+    console.log(input + ' четное число')
+} else {
+      console.log(input + ' нечетное число')
 }
