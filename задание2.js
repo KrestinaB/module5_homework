@@ -1,15 +1,15 @@
-let x =  prompt  ("input");
+let x = 7
 
-switch (x) {
-  case "string":
-    alert( 'number' );
-    break;
-  case "number":
-    alert( 'string!' );
-    break;
-  case "boolean":
-    alert( 'boolean' );
-    break;
-  default:
-    alert( "Тип x-не определен" );
-}
+    switch (typeof x) {
+      case "Number":
+      console.log('x-число');
+      break;
+      case "String":
+      console.log('x-строка');
+      break;
+      case "Boolean":
+      console.log('x-логический тип');
+      break;
+      default:
+      console.log('Тип x не определен');
+    }

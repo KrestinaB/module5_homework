@@ -1,11 +1,10 @@
-function check(a) {
-  for (var q=1; q<a.length; ++q) {
-    if (a[q] === a[q*1]) {
-      return false;
-    }
-  }
-  
-  return true;
-}
+let arr = [1, 1, 2, 1, 4];
+let checkElements = 'true';
 
-console.log(check([3, 1, 10, 12, 15, 20, 1 ]));
+
+for (let i = 0; i < arr.length -1 ; i++) {
+   if (arr[i] !== arr[i + 1]) {
+      checkElements = 'false';
+   }
+}
+console.log(checkElements)
